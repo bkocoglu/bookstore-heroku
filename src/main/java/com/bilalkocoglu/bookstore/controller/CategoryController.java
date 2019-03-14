@@ -17,7 +17,7 @@ import java.util.List;
 @RestController
 @RequestMapping(value = CategoryController.END_POINT)
 public class CategoryController {
-    public static final String END_POINT = "/category";
+    public static final String END_POINT = "/api/category";
     private static final Logger log = LoggerFactory.getLogger(CategoryController.class);
 
     private CategoryService categoryService;

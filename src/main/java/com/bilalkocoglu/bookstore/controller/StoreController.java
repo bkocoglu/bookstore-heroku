@@ -20,7 +20,7 @@ import java.util.List;
 @RestController
 @RequestMapping(value = StoreController.END_POINT)
 public class StoreController {
-    public static final String END_POINT = "/store";
+    public static final String END_POINT = "/api/store";
     private static final Logger log = LoggerFactory.getLogger(StoreController.class);
 
     private StoreService storeService;

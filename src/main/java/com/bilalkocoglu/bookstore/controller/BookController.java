@@ -7,6 +7,7 @@ import com.bilalkocoglu.bookstore.model.Book;
 import com.bilalkocoglu.bookstore.model.Store;
 import com.bilalkocoglu.bookstore.service.BookService;
 import com.bilalkocoglu.bookstore.service.StoreService;
+import io.swagger.annotations.Api;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -19,7 +20,7 @@ import java.util.List;
 @RestController
 @RequestMapping(value = BookController.END_POINT)
 public class BookController {
-    public static final String END_POINT = "/book";
+    public static final String END_POINT = "/api/book";
     private static final Logger log = LoggerFactory.getLogger(BookController.class);
 
     private BookService bookService;
